@@ -4,7 +4,7 @@ Twitter: jonbca7
 From: Sarnia, Ontario, Canada
 
 /* SITE */
-Last Update: 2011/07/24
+Last Update: {{ site.time }}
 Language: English
 Doctype: HTML5
 Tools: Github, Terminal, Textmate
