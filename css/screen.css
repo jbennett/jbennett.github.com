@@ -4,6 +4,13 @@ body {
 	margin: 0;
 }
 
+a { 
+	color: #64728D; 
+	border-bottom: 1px dotted #63728D;
+}
+a:hover { border-style: solid; }
+a:visited { color: #8294B7; border-color: #8294B7; }
+
 .site {
 	margin: 0 auto;
 	width: 960px;
@@ -22,7 +29,7 @@ body {
 }
 
 .footer {
-	
+	margin: 2em 0 1em;
 }
 
 .column {
