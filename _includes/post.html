@@ -18,10 +18,12 @@
 			{% if post_year != current_year %}
 				{% capture date_format %}%A, %B %e %Y{% endcapture %}
 			{% else %}
-				{% capture date_formate %}%A, %B %e{% endcapture %}
+				{% capture date_format %}%A, %B %e{% endcapture %}
 			{% endif %}
 			
-			<time pubdate datetime="{{ post.date | html_global_date }}">{{ post.date | date: date_format }}</time>
+			<time pubdate datetime="{{ post.date | html_global_date }}">
+				{{ post.date | date: date_format }}
+			</time>
 		</p>
 	</footer>
 </article>
