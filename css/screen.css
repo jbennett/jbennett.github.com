@@ -24,6 +24,7 @@ header a {
 	font-size: 60px;
 	text-shadow: 1px 1px 1px #AAA;
 }
+header a:hover { border: none; }
 
 #content {
 	float: left;
