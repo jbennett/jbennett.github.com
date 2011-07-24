@@ -47,11 +47,14 @@
 				<nav>
 					<h2>Previous Posts</h2>
 					<ul>
-						<li><a href="#">Title</a> - July 24</li>
-						<li><a href="#">Title</a> - July 24</li>
-						<li><a href="#">Title</a> - July 24</li>
-						<li><a href="#">Title</a> - July 24</li>
-						<li><a href="#">View More Posts</a></li>
+						{% for post in site.posts limit:5 %}
+							<li>
+								<a href="{{ post.url }}">{{ post.title }}</a> -
+								{{ post.date | date_to_long_string }}
+							</li>
+						{% endfor %}
+						
+						<li><a href="/posts.html">View More Posts</a></li>
 					</ul>
 				</nav>
 				
