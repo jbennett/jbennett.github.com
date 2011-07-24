@@ -13,21 +13,26 @@ a {
 a:hover { border-bottom-style: solid; }
 a:visited { color: #8294B7; border-color: #8294B7; }
 
-.site {
+#container {
 	margin: 0 auto;
 	width: 960px;
 }
 
-.sitename a {
+header a {
 	border: none;
 	color: #64728D;
 	font-size: 60px;
 	text-shadow: 1px 1px 1px #AAA;
 }
-.sitename a:hover { }
 
-.body {
-	
+#content {
+	float: left;
+	width: 66%;
+}
+
+#content + aside {
+	float: left;
+	width: 33%;
 }
 
 .footer {
