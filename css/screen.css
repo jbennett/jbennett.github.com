@@ -1,0 +1,56 @@
+.site {
+	
+}
+
+.sitename {
+	
+}
+
+.body {
+	
+}
+
+.footer {
+	
+}
+
+.column {
+	
+}
+
+.width25, .width50, .width75 { float: left; }
+.width25 { width: 25%; }
+.width50 { width: 50%; }
+.width75 { width: 75%; }
+
+.clear, .clr { clear: both; }
+.left { float: left; }
+.right { float: right; }
+
+.panel {
+	
+}
+
+/* menus */
+ul.hmenu {
+	list-style: none;
+	margin: 0;
+}
+
+ul.hmenu li {
+	
+}
+
+ul.vmenu {
+	list-style: none;
+	margin: 0;
+	text-align: center;
+}
+
+ul.vmenu li {
+	display: inline-block;
+	*display: inline;
+	padding: 0 10px;
+	zoom: 1;
+}
+/* end menus */
