@@ -10,7 +10,7 @@ a {
 	border-bottom: 1px dotted #63728D;
 	text-decoration: none;
 }
-a:hover { border-style: solid; }
+a:hover { border-bottom-style: solid; }
 a:visited { color: #8294B7; border-color: #8294B7; }
 
 .site {
@@ -21,7 +21,7 @@ a:visited { color: #8294B7; border-color: #8294B7; }
 .sitename a {
 	border: none;
 	color: #64728D;
-	font-size: 80px;
+	font-size: 60px;
 	text-shadow: 1px 1px 1px #AAA;
 }
 .sitename a:hover { }
