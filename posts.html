@@ -3,6 +3,9 @@ title: Posts
 layout: default
 ---
 
+per page: {{ paginator.per_page }}<br/>
+total pages: {{ paginator.total_pages }}
+
 {% for post in paginator.posts %}
 	{% include post.html %}
 {% endfor %}
