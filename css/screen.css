@@ -6,6 +6,7 @@ body {
 
 a { 
 	color: #64728D; 
+	border: none;
 	border-bottom: 1px dotted #63728D;
 	text-decoration: none;
 }
