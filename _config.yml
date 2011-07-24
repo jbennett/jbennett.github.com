@@ -1,4 +1,5 @@
 url: "http://jbennett.github.com"
+auto: true
 markdown: rdiscount
 pygments: true
 paginate: 3
