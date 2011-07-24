@@ -1,10 +1,20 @@
-.site {
-	
+body {
+	background: url(../images/whitey.png);
+	font-family: helvetica;
+	margin: 0;
 }
 
-.sitename {
-	
+.site {
+	margin: 0 auto;
+	width: 960px;
 }
+
+.sitename a {
+	color: #64728D;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px #AAA;
+}
+.sitename a:hover { }
 
 .body {
 	
