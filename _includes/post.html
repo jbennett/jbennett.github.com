@@ -11,6 +11,27 @@
 		{{ post.content }}
 	{% endif %}
 	
+	<section id="comments">
+		<div id="disqus_thread"></div>
+		<script type="text/javascript" src="http://d/forums/jbennett.me/embed.js"></script>
+		
+		<script type="text/javascript">
+		    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		    var disqus_shortname = 'jbennett'; // required: replace example with your forum shortname
+
+		    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+		    var disqus_identifier = '{{ post.id }}';
+		    var disqus_url = '{{ post.url }}';
+
+		    /* * * DON'T EDIT BELOW THIS LINE * * */
+		    (function() {
+		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		    })();
+		</script>
+	</section>
+	
 	<footer>
 		<p>
 			{% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
@@ -21,8 +42,8 @@
 				{% capture date_format %}%A, %B %e{% endcapture %}
 			{% endif %}
 			
-			<time pubdate datetime="{{ post.date | html_global_date }}">
-				{{ post.date | date: date_format }}
+			Posted: <time pubdate datetime="{{ post.date | html_global_date }}">
+				{{ post.date | date: date_to_long_string }}
 			</time>
 		</p>
 	</footer>
